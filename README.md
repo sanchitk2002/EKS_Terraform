@@ -103,10 +103,38 @@ The following resources **must already exist** in your AWS account:
 
 ---
 
-## Project Structure
+## Repository Structure
 
 ```text
-. ├── environment │ ├── dev │ │ ├── main.tf │ │ ├── variables.tf │ │ └── terraform.tfvars │ ├── pre-prod │ │ ├── main.tf │ │ ├── variables.tf │ │ └── terraform.tfvars │ └── prod │ ├── main.tf │ ├── variables.tf │ └── terraform.tfvars │ ├── module │ ├── eks │ │ ├── main.tf │ │ ├── variables.tf │ │ └── outputs.tf │ └── karpenter │ ├── main.tf │ ├── variables.tf │ └── outputs.tf │ ├── statebucket │ └── main.tf │ └── README.md
+.
+├── environment
+│   ├── dev
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── terraform.tfvars
+│   ├── pre-prod
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── terraform.tfvars
+│   └── prod
+│       ├── main.tf
+│       ├── variables.tf
+│       └── terraform.tfvars
+│
+├── module
+│   ├── eks
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   └── outputs.tf
+│   └── karpenter
+│       ├── main.tf
+│       ├── variables.tf
+│       └── outputs.tf
+│
+├── statebucket
+│   └── main.tf
+│
+└── README.md
 ```
 
 Each environment is **fully self-contained** and can be deployed independently.
