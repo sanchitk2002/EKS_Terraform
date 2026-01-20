@@ -258,7 +258,7 @@ Deployment-xxxxx-xxxxx        0/1     Pending    # Waiting for Karpenter
 
 ### EKS Cluster
 
-* **Kubernetes Version**: 1.29
+* **Kubernetes Version**: 1.34
 * **Endpoint Access**: Private only
 * **Subnets**: Private subnets only
 * **Node Management**: Karpenter (no managed node groups)
